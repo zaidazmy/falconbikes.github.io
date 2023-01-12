@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+  --lg-font: 'Kaisei Tokumin', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --red: rgb(255, 59, 59);
+}
+
+body{
+  font-family: var(--sm-font);
+}
+
+.bg-primary{
+  background-color: var(--red)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: var(--red);
+    color: white;
+    padding: 10px 28px;
+    border-radius: 0px;
+    border-width: 0px;
+}
+.btn:not(.nav-btns button):hover{
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+
+.navbar{
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand{
+  letter-spacing: 2px;
+  font-family: var(--lg-font);
+}
+
+.nav-link:hover{
+  color: var(--red)!important;
+}
+
+.nav-item{
+  border-bottom: 1px solid rgb(121, 121, 121, 0.15);
+}
+
+#header{
+    background: url(../finalproject/images/banner.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: var(red)!important;
+}
+.carousel-item .btn:hover{
+    border-color: black!important;
+}
+
+@media(min-width: 768px){
+  .nav-item{
+    border-bottom: none;
+  }
+}
+
+.active-filter-btn{
+    background-color: var(--red)!important;
+    color: #fff!important;
+}
+
+.active-filter-btn:hover{
+    background-color: black!important;
+    color: #fff!important;
+}
+
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.collection-img:hover{
+  cursor: pointer;
+}
+
+.collection-img{
+  height: 300px;
+  overflow: hidden;
+}
+
+.collection-img img{
+  transform-origin: 50% 65%;
+  transition: transform 0.5s, filter 0.3s ease-in-out;
+  filter: brightness(90%);
+}
+
+.collection-img img:hover{
+  filter: brightness(100%);
+  transform: scale(1.03);
+}
+
+.socialicons{
+  min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+  padding-left: 0px;
+}
+
+.socialicons li{
+  display: inline;
+  padding: 10px;
+}
+
+.socialicons img{
+  transition: transform .3s, filter .2s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.socialicons a{
+  text-decoration: none;
+}
+
+.socialicons img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+#offers{
+    background: url(../finalproject/images/banner2.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--red);
+    color: #fff;
+    border-color: var(--red);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.row h1{
+  font-family: var(--lg-font);
+}
+
+#introTitle{
+  padding-left: 10px;
+  background-color: var(--red);
+  transition: .5s;
+}
+
+#introTitle:hover{
+  background-color: black;
+}
+
+#contactHeader h1{
+  font-family: var(--lg-font);
+}
+
+#productItem1 h3{
+  color: var(--red);
+}
+
+#productImg1{
+  overflow: hidden;
+}
+
+#productImg1 img{
+  transition: transform .3s ease-in-out;
+}
+
+#productImg1 img:hover{
+  transform: scale(1.05);
+}
